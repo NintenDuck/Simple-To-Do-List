@@ -43,25 +43,30 @@ margin_top = 70.0
 margin_right = -20.0
 margin_bottom = -110.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/ContentMargin"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/ContentMargin"]
 margin_right = 371.0
 margin_bottom = 551.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/ContentMargin/ScrollContainer"]
+margin_right = 360.0
+margin_bottom = 59.0
 custom_constants/separation = 8
 
-[node name="TaskContainer" type="HBoxContainer" parent="Control/ContentMargin/VBoxContainer"]
-margin_right = 371.0
+[node name="Task" type="HBoxContainer" parent="Control/ContentMargin/ScrollContainer/VBoxContainer"]
+margin_right = 360.0
 margin_bottom = 59.0
+rect_min_size = Vector2( 360, 0 )
 custom_constants/separation = 16
 
-[node name="TaskCheckBox" type="CheckBox" parent="Control/ContentMargin/VBoxContainer/TaskContainer"]
+[node name="TaskCheckBox" type="CheckBox" parent="Control/ContentMargin/ScrollContainer/VBoxContainer/Task"]
 margin_right = 24.0
 margin_bottom = 59.0
 focus_mode = 0
 enabled_focus_mode = 0
 
-[node name="TaskLabel" type="Label" parent="Control/ContentMargin/VBoxContainer/TaskContainer"]
+[node name="TaskLabel" type="Label" parent="Control/ContentMargin/ScrollContainer/VBoxContainer/Task"]
 margin_left = 40.0
-margin_right = 371.0
+margin_right = 360.0
 margin_bottom = 59.0
 size_flags_horizontal = 7
 theme = ExtResource( 1 )
