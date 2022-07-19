@@ -11,19 +11,19 @@ theme = ExtResource( 1 )
 
 [node name="CenterContainer" type="ColorRect" parent="Control"]
 anchor_right = 1.0
-anchor_bottom = 0.996
+anchor_bottom = 0.897
 margin_top = 40.0
-margin_bottom = -56.076
+margin_bottom = 0.292969
 color = Color( 1, 0.933333, 0.811765, 1 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="DownBorder" type="ColorRect" parent="Control"]
-anchor_top = 1.0
+anchor_top = 0.897
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -59.0
+margin_top = 0.292969
 color = Color( 0.788235, 0.65098, 0.564706, 1 )
 
 [node name="UpBorder" type="ColorRect" parent="Control"]
@@ -36,36 +36,32 @@ __meta__ = {
 }
 
 [node name="ContentMargin" type="MarginContainer" parent="Control"]
-anchor_top = 0.0547196
-anchor_right = 0.992701
-anchor_bottom = 0.919289
-margin_left = 30.0
-margin_top = 20.0
-margin_right = -30.0
-margin_bottom = -20.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 70.0
+margin_right = -20.0
+margin_bottom = -110.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/ContentMargin"]
-margin_right = 348.0
-margin_bottom = 592.0
+margin_right = 371.0
+margin_bottom = 551.0
 custom_constants/separation = 8
 
 [node name="TaskContainer" type="HBoxContainer" parent="Control/ContentMargin/VBoxContainer"]
-margin_right = 348.0
+margin_right = 371.0
 margin_bottom = 59.0
 custom_constants/separation = 16
 
-[node name="CheckBox" type="CheckBox" parent="Control/ContentMargin/VBoxContainer/TaskContainer"]
-margin_right = 32.0
+[node name="TaskCheckBox" type="CheckBox" parent="Control/ContentMargin/VBoxContainer/TaskContainer"]
+margin_right = 24.0
 margin_bottom = 59.0
 focus_mode = 0
 enabled_focus_mode = 0
 
 [node name="TaskLabel" type="Label" parent="Control/ContentMargin/VBoxContainer/TaskContainer"]
-margin_left = 48.0
-margin_right = 348.0
+margin_left = 40.0
+margin_right = 371.0
 margin_bottom = 59.0
 size_flags_horizontal = 7
 theme = ExtResource( 1 )
@@ -73,3 +69,27 @@ custom_colors/font_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 text = "Lorem Lorem Lorem Lorem Lorem "
 valign = 1
 autowrap = true
+
+[node name="ButtonMarginContainer" type="MarginContainer" parent="Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -75.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/ButtonMarginContainer"]
+margin_right = 411.0
+margin_bottom = 75.0
+
+[node name="Button" type="Button" parent="Control/ButtonMarginContainer/CenterContainer"]
+margin_left = 125.0
+margin_top = 10.0
+margin_right = 285.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 160, 55 )
+focus_mode = 0
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+custom_colors/font_color_hover = Color( 0.454902, 0.454902, 0.454902, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+enabled_focus_mode = 0
+text = "+"
