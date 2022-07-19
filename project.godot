@@ -11,7 +11,17 @@ config_version=4
 [application]
 
 config/name="Simple- To- Do- List"
+run/main_scene="res://scenes/main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=411
+window/size/height=731
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 
