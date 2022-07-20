@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-signal taskChecked()
+signal taskChecked(wasChecked)
 
 onready var tasks = get_children()
 
@@ -25,9 +25,7 @@ func append_new_task():
 func _on_Task_checkbox_value_changed(checked:bool):
 	if checked:
 		print("One task was checked")
-		emit_signal("taskChecked")
-	else:
-		print("Task unchecked")
+		emit_signal("taskChecked", checked)
 
 
 func delete_checked_tasks():
@@ -35,6 +33,14 @@ func delete_checked_tasks():
 		if task.checked:
 			task.queue_free()
 	update_task_list()
+
+
+func has_checked_task():
+	for task in tasks:
+		if tasks.checked:
+			return true
+	return false
+
 
 func update_task_list():
 	tasks.clear()
