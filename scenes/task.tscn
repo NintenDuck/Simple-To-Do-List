@@ -4,6 +4,7 @@
 
 [node name="Task" type="HBoxContainer"]
 anchor_right = 1.0
+margin_bottom = 121.0
 rect_min_size = Vector2( 360, 0 )
 size_flags_horizontal = 3
 theme = ExtResource( 1 )

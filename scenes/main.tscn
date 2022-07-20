@@ -14,6 +14,8 @@ shortcut = SubResource( 1 )
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = ExtResource( 1 )
 
 [node name="CenterContainer" type="ColorRect" parent="Control"]
@@ -42,89 +44,87 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ContentMargin" type="MarginContainer" parent="Control"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control"]
 anchor_top = 0.055
 anchor_right = 1.0
-anchor_bottom = 0.886
+anchor_bottom = 0.897
 margin_left = 24.0
 margin_top = 7.795
-margin_right = -27.0
-margin_bottom = 0.333984
-
-[node name="ScrollContainer" type="ScrollContainer" parent="Control/ContentMargin"]
-margin_right = 361.0
-margin_bottom = 600.0
+margin_right = -26.0
+margin_bottom = -8.70703
 size_flags_horizontal = 3
-scroll_horizontal_enabled = false
+size_flags_vertical = 3
 
-[node name="TaskContainer" type="VBoxContainer" parent="Control/ContentMargin/ScrollContainer"]
+[node name="TaskContainer" type="VBoxContainer" parent="Control/ScrollContainer"]
 margin_right = 360.0
 margin_bottom = 2072.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 custom_constants/separation = 40
 __meta__ = {
 "_editor_description_": "Insert 'tasks' nodes"
 }
 
-[node name="Task" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_right = 360.0
 margin_bottom = 152.0
 
-[node name="Task2" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task2" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 192.0
 margin_right = 360.0
 margin_bottom = 344.0
 
-[node name="Task3" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task3" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 384.0
 margin_right = 360.0
 margin_bottom = 536.0
 
-[node name="Task4" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task4" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 576.0
 margin_right = 360.0
 margin_bottom = 728.0
 
-[node name="Task5" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task5" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 768.0
 margin_right = 360.0
 margin_bottom = 920.0
 
-[node name="Task6" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task6" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 960.0
 margin_right = 360.0
 margin_bottom = 1112.0
 
-[node name="Task7" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task7" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 1152.0
 margin_right = 360.0
 margin_bottom = 1304.0
 
-[node name="Task8" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task8" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 1344.0
 margin_right = 360.0
 margin_bottom = 1496.0
 
-[node name="Task9" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task9" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 1536.0
 margin_right = 360.0
 margin_bottom = 1688.0
 
-[node name="Task10" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task10" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 1728.0
 margin_right = 360.0
 margin_bottom = 1880.0
 
-[node name="Task11" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task11" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_top = 1920.0
 margin_right = 360.0
