@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://resources/themes/simple_theme.tres" type="Theme" id=1]
 [ext_resource path="res://scenes/task.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/task_container.gd" type="Script" id=3]
+[ext_resource path="res://scripts/app.gd" type="Script" id=4]
+[ext_resource path="res://scripts/lowerButton.gd" type="Script" id=5]
 
 [sub_resource type="InputEventAction" id=1]
 action = "ui_accept"
@@ -11,14 +14,15 @@ shortcut = SubResource( 1 )
 
 [node name="Main" type="CanvasLayer"]
 
-[node name="Control" type="Control" parent="."]
+[node name="App" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource( 1 )
+script = ExtResource( 4 )
 
-[node name="CenterContainer" type="ColorRect" parent="Control"]
+[node name="CenterContainerTexture" type="ColorRect" parent="App"]
 anchor_top = 0.055
 anchor_right = 1.0
 anchor_bottom = 0.897
@@ -29,14 +33,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="DownBorder" type="ColorRect" parent="Control"]
+[node name="DownBorderTexture" type="ColorRect" parent="App"]
 anchor_top = 0.897
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 0.292969
 color = Color( 0.788235, 0.65098, 0.564706, 1 )
 
-[node name="UpBorder" type="ColorRect" parent="Control"]
+[node name="UpBorderTexture" type="ColorRect" parent="App"]
 anchor_right = 1.0
 anchor_bottom = 0.0547196
 color = Color( 0.788235, 0.65098, 0.564706, 1 )
@@ -44,7 +48,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Control"]
+[node name="TaskScroll" type="ScrollContainer" parent="App"]
 anchor_top = 0.055
 anchor_right = 1.0
 anchor_bottom = 0.897
@@ -55,92 +59,63 @@ margin_bottom = -8.70703
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TaskContainer" type="VBoxContainer" parent="Control/ScrollContainer"]
+[node name="TaskContainer" type="VBoxContainer" parent="App/TaskScroll"]
 margin_right = 360.0
-margin_bottom = 2072.0
+margin_bottom = 806.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 40
+script = ExtResource( 3 )
 __meta__ = {
 "_editor_description_": "Insert 'tasks' nodes"
 }
 
-[node name="Task" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_right = 360.0
-margin_bottom = 152.0
+margin_bottom = 101.0
 
-[node name="Task2" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task2" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 192.0
+margin_top = 141.0
 margin_right = 360.0
-margin_bottom = 344.0
+margin_bottom = 242.0
 
-[node name="Task3" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task3" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 384.0
+margin_top = 282.0
 margin_right = 360.0
-margin_bottom = 536.0
+margin_bottom = 383.0
 
-[node name="Task4" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task4" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 576.0
+margin_top = 423.0
 margin_right = 360.0
-margin_bottom = 728.0
+margin_bottom = 524.0
 
-[node name="Task5" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task5" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 768.0
+margin_top = 564.0
 margin_right = 360.0
-margin_bottom = 920.0
+margin_bottom = 665.0
 
-[node name="Task6" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
+[node name="Task6" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 960.0
+margin_top = 705.0
 margin_right = 360.0
-margin_bottom = 1112.0
+margin_bottom = 806.0
 
-[node name="Task7" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 1152.0
-margin_right = 360.0
-margin_bottom = 1304.0
-
-[node name="Task8" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 1344.0
-margin_right = 360.0
-margin_bottom = 1496.0
-
-[node name="Task9" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 1536.0
-margin_right = 360.0
-margin_bottom = 1688.0
-
-[node name="Task10" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 1728.0
-margin_right = 360.0
-margin_bottom = 1880.0
-
-[node name="Task11" parent="Control/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 1920.0
-margin_right = 360.0
-margin_bottom = 2072.0
-
-[node name="ButtonMarginContainer" type="MarginContainer" parent="Control"]
+[node name="ButtonMarginContainer" type="MarginContainer" parent="App"]
 anchor_top = 0.897
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 0.292969
 
-[node name="CenterContainer" type="CenterContainer" parent="Control/ButtonMarginContainer"]
+[node name="ButtonContainer" type="CenterContainer" parent="App/ButtonMarginContainer"]
 margin_right = 411.0
 margin_bottom = 75.0
 
-[node name="Button" type="Button" parent="Control/ButtonMarginContainer/CenterContainer"]
+[node name="Button" type="Button" parent="App/ButtonMarginContainer/ButtonContainer"]
 margin_left = 105.0
 margin_top = 10.0
 margin_right = 305.0
@@ -155,3 +130,4 @@ shortcut_in_tooltip = false
 enabled_focus_mode = 0
 shortcut = SubResource( 2 )
 text = "+"
+script = ExtResource( 5 )

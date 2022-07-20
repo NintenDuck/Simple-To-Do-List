@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://resources/themes/simple_theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/task.gd" type="Script" id=2]
 
 [node name="Task" type="HBoxContainer"]
 anchor_right = 1.0
@@ -9,6 +10,7 @@ rect_min_size = Vector2( 360, 0 )
 size_flags_horizontal = 3
 theme = ExtResource( 1 )
 custom_constants/separation = 16
+script = ExtResource( 2 )
 
 [node name="TaskCheckBox" type="CheckBox" parent="."]
 margin_right = 32.0
@@ -23,8 +25,9 @@ __meta__ = {
 
 [node name="TaskLabel" type="Label" parent="."]
 margin_left = 48.0
+margin_top = 23.0
 margin_right = 411.0
-margin_bottom = 121.0
+margin_bottom = 98.0
 rect_min_size = Vector2( 300, 0 )
 rect_clip_content = true
 size_flags_horizontal = 3
@@ -36,3 +39,5 @@ autowrap = true
 __meta__ = {
 "_editor_description_": ""
 }
+
+[connection signal="toggled" from="TaskCheckBox" to="." method="_on_TaskCheckBox_toggled"]
