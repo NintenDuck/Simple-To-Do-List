@@ -35,25 +35,24 @@ color = Color( 0.788235, 0.65098, 0.564706, 1 )
 
 [node name="UpBorder" type="ColorRect" parent="Control"]
 anchor_right = 1.0
-anchor_bottom = 0.00136799
-margin_bottom = 39.0
+anchor_bottom = 0.0547196
 color = Color( 0.788235, 0.65098, 0.564706, 1 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="ContentMargin" type="MarginContainer" parent="Control"]
-anchor_top = 0.098
+anchor_top = 0.055
 anchor_right = 1.0
-anchor_bottom = 0.854
+anchor_bottom = 0.886
 margin_left = 20.0
-margin_top = -1.638
+margin_top = 15.795
 margin_right = -20.0
-margin_bottom = -3.27405
+margin_bottom = -7.66602
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Control/ContentMargin"]
 margin_right = 371.0
-margin_bottom = 550.0
+margin_bottom = 584.0
 
 [node name="TaskContainer" type="VBoxContainer" parent="Control/ContentMargin/ScrollContainer"]
 margin_right = 360.0
