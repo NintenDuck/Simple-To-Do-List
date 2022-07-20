@@ -3,29 +3,30 @@
 [ext_resource path="res://resources/themes/simple_theme.tres" type="Theme" id=1]
 
 [node name="Task" type="HBoxContainer"]
-margin_right = 360.0
-margin_bottom = 59.0
+anchor_right = 1.0
+margin_bottom = 28.0
 rect_min_size = Vector2( 360, 0 )
 theme = ExtResource( 1 )
 custom_constants/separation = 16
 
 [node name="TaskCheckBox" type="CheckBox" parent="."]
-margin_right = 24.0
-margin_bottom = 152.0
+margin_right = 32.0
+margin_bottom = 90.0
 focus_mode = 0
+mouse_filter = 1
 enabled_focus_mode = 0
 __meta__ = {
 "_editor_description_": ""
 }
 
 [node name="TaskLabel" type="Label" parent="."]
-margin_left = 40.0
-margin_right = 360.0
-margin_bottom = 152.0
+margin_left = 48.0
+margin_right = 411.0
+margin_bottom = 90.0
 size_flags_horizontal = 7
 theme = ExtResource( 1 )
 custom_colors/font_color = Color( 0.14902, 0.14902, 0.14902, 1 )
-text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+text = "Ir a recojer a los chamacos a la escuela porque si no van a terminar en Oaxaca"
 valign = 1
 autowrap = true
 __meta__ = {

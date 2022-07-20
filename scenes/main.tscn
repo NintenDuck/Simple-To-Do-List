@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://resources/themes/simple_theme.tres" type="Theme" id=1]
 [ext_resource path="res://scenes/task.tscn" type="PackedScene" id=2]
+
+[sub_resource type="InputEventAction" id=1]
+action = "ui_accept"
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
 
 [node name="Main" type="CanvasLayer"]
 
@@ -47,55 +53,77 @@ margin_bottom = -3.27405
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Control/ContentMargin"]
 margin_right = 371.0
-margin_bottom = 551.0
+margin_bottom = 550.0
 
 [node name="TaskContainer" type="VBoxContainer" parent="Control/ContentMargin/ScrollContainer"]
 margin_right = 360.0
-margin_bottom = 1752.0
-custom_constants/separation = 8
+margin_bottom = 1390.0
+custom_constants/separation = 40
 
 [node name="Task" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_bottom = 152.0
+anchor_right = 0.0
+margin_right = 360.0
+margin_bottom = 90.0
 
 [node name="Task2" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 160.0
-margin_bottom = 312.0
+anchor_right = 0.0
+margin_top = 130.0
+margin_right = 360.0
+margin_bottom = 220.0
 
 [node name="Task3" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 320.0
-margin_bottom = 472.0
+anchor_right = 0.0
+margin_top = 260.0
+margin_right = 360.0
+margin_bottom = 350.0
 
 [node name="Task4" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 480.0
-margin_bottom = 632.0
+anchor_right = 0.0
+margin_top = 390.0
+margin_right = 360.0
+margin_bottom = 480.0
 
 [node name="Task5" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 640.0
-margin_bottom = 792.0
+anchor_right = 0.0
+margin_top = 520.0
+margin_right = 360.0
+margin_bottom = 610.0
 
 [node name="Task6" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 800.0
-margin_bottom = 952.0
+anchor_right = 0.0
+margin_top = 650.0
+margin_right = 360.0
+margin_bottom = 740.0
 
 [node name="Task7" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 960.0
-margin_bottom = 1112.0
+anchor_right = 0.0
+margin_top = 780.0
+margin_right = 360.0
+margin_bottom = 870.0
 
 [node name="Task8" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 1120.0
-margin_bottom = 1272.0
+anchor_right = 0.0
+margin_top = 910.0
+margin_right = 360.0
+margin_bottom = 1000.0
 
 [node name="Task9" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 1280.0
-margin_bottom = 1432.0
+anchor_right = 0.0
+margin_top = 1040.0
+margin_right = 360.0
+margin_bottom = 1130.0
 
 [node name="Task10" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 1440.0
-margin_bottom = 1592.0
+anchor_right = 0.0
+margin_top = 1170.0
+margin_right = 360.0
+margin_bottom = 1260.0
 
 [node name="Task11" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
-margin_top = 1600.0
-margin_bottom = 1752.0
+anchor_right = 0.0
+margin_top = 1300.0
+margin_right = 360.0
+margin_bottom = 1390.0
 
 [node name="ButtonMarginContainer" type="MarginContainer" parent="Control"]
 anchor_top = 1.0
@@ -119,4 +147,5 @@ custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_hover = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 enabled_focus_mode = 0
+shortcut = SubResource( 2 )
 text = "+"
