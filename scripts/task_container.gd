@@ -38,9 +38,5 @@ func delete_checked_tasks():
 
 func update_task_list():
 	tasks.clear()
-
-	for task in tasks:
-		task.queue_free()
 	yield(get_tree().create_timer(0.1),"timeout")
-			
 	tasks = get_children()
