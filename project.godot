@@ -18,6 +18,7 @@ config/icon="res://icon.png"
 
 window/size/width=411
 window/size/height=731
+window/handheld/orientation="portrait"
 
 [input_devices]
 

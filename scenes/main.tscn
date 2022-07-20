@@ -46,18 +46,20 @@ __meta__ = {
 anchor_top = 0.055
 anchor_right = 1.0
 anchor_bottom = 0.886
-margin_left = 20.0
-margin_top = 15.795
-margin_right = -20.0
-margin_bottom = -7.66602
+margin_left = 24.0
+margin_top = 7.795
+margin_right = -27.0
+margin_bottom = 0.333984
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Control/ContentMargin"]
-margin_right = 371.0
-margin_bottom = 584.0
+margin_right = 361.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+scroll_horizontal_enabled = false
 
 [node name="TaskContainer" type="VBoxContainer" parent="Control/ContentMargin/ScrollContainer"]
 margin_right = 360.0
-margin_bottom = 1390.0
+margin_bottom = 2072.0
 custom_constants/separation = 40
 __meta__ = {
 "_editor_description_": "Insert 'tasks' nodes"
@@ -66,67 +68,67 @@ __meta__ = {
 [node name="Task" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 margin_right = 360.0
-margin_bottom = 90.0
+margin_bottom = 152.0
 
 [node name="Task2" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 130.0
+margin_top = 192.0
 margin_right = 360.0
-margin_bottom = 220.0
+margin_bottom = 344.0
 
 [node name="Task3" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 260.0
+margin_top = 384.0
 margin_right = 360.0
-margin_bottom = 350.0
+margin_bottom = 536.0
 
 [node name="Task4" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 390.0
+margin_top = 576.0
 margin_right = 360.0
-margin_bottom = 480.0
+margin_bottom = 728.0
 
 [node name="Task5" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 520.0
+margin_top = 768.0
 margin_right = 360.0
-margin_bottom = 610.0
+margin_bottom = 920.0
 
 [node name="Task6" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 650.0
+margin_top = 960.0
 margin_right = 360.0
-margin_bottom = 740.0
+margin_bottom = 1112.0
 
 [node name="Task7" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 780.0
+margin_top = 1152.0
 margin_right = 360.0
-margin_bottom = 870.0
+margin_bottom = 1304.0
 
 [node name="Task8" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 910.0
+margin_top = 1344.0
 margin_right = 360.0
-margin_bottom = 1000.0
+margin_bottom = 1496.0
 
 [node name="Task9" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 1040.0
+margin_top = 1536.0
 margin_right = 360.0
-margin_bottom = 1130.0
+margin_bottom = 1688.0
 
 [node name="Task10" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 1170.0
+margin_top = 1728.0
 margin_right = 360.0
-margin_bottom = 1260.0
+margin_bottom = 1880.0
 
 [node name="Task11" parent="Control/ContentMargin/ScrollContainer/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 1300.0
+margin_top = 1920.0
 margin_right = 360.0
-margin_bottom = 1390.0
+margin_bottom = 2072.0
 
 [node name="ButtonMarginContainer" type="MarginContainer" parent="Control"]
 anchor_top = 0.897
@@ -149,6 +151,7 @@ size_flags_vertical = 3
 custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_hover = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+shortcut_in_tooltip = false
 enabled_focus_mode = 0
 shortcut = SubResource( 2 )
 text = "+"
