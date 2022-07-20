@@ -1,8 +1,7 @@
 # Simple-To-Do-List
+![Simple-To-Do-List Logo](./icon.png)
 ## What is it?
 **My god**, just a simple **ToDo Checklist**
-***
-![Simple-To-Do-List Logo](./icon.png)
 
 ## Why?
 I have encountered (and used) a lot of ToDo applications in my file, all of them are honestly amazing.
