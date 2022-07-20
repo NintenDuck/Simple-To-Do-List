@@ -36,11 +36,11 @@ func delete_checked_tasks():
 			task.queue_free()
 	update_task_list()
 
-# TODO: Fix tasks array not updating when erasing
 func update_task_list():
 	tasks.clear()
-	print(tasks)
-	tasks = get_children()
-	print("New task list:")
+
 	for task in tasks:
-		print(task.name)
+		task.queue_free()
+	yield(get_tree().create_timer(0.1),"timeout")
+			
+	tasks = get_children()
