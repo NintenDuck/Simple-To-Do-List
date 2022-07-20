@@ -1,9 +1,10 @@
 extends VBoxContainer
 
-signal taskChecked(wasChecked)
+signal num_tasks_changed(taskNumber)
 
 onready var tasks = get_children()
 
+var tasksSelected = 0
 
 func _ready():
 	# When start, get access to all tasks on the list
@@ -11,21 +12,12 @@ func _ready():
 
 
 func get_task_signal():
-	print("Initial task list:")
 	for task in tasks:
-		print(task.name)
 		task.connect("checkbox_value_changed", self, "_on_Task_checkbox_value_changed")
 
 
-func append_new_task():
+func add_new_task():
 	pass
-
-
-# If task is checked then tell App that at least one task is checked
-func _on_Task_checkbox_value_changed(checked:bool):
-	if checked:
-		print("One task was checked")
-		emit_signal("taskChecked", checked)
 
 
 func delete_checked_tasks():
@@ -35,14 +27,27 @@ func delete_checked_tasks():
 	update_task_list()
 
 
-func has_checked_task():
+func update_task_list():
+	tasks.clear()
+	tasksSelected = 0
+	emit_signal("num_tasks_changed", tasksSelected)
+	yield(get_tree().create_timer(0.1),"timeout")
+	tasks = get_children()
+
+
+func has_checked_tasks():
 	for task in tasks:
 		if tasks.checked:
 			return true
 	return false
 
 
-func update_task_list():
-	tasks.clear()
-	yield(get_tree().create_timer(0.1),"timeout")
-	tasks = get_children()
+# If task is checked then tell App that at least one task is checked
+func _on_Task_checkbox_value_changed(checked:bool):
+	if checked:
+		tasksSelected += 1
+	else:
+		tasksSelected -= 1
+	
+	emit_signal("num_tasks_changed", tasksSelected)
+	
