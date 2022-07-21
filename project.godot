@@ -12,6 +12,8 @@ config_version=4
 
 config/name="Simple- To- Do- List"
 run/main_scene="res://scenes/main.tscn"
+boot_splash/image="res://TODO_splashscreen.png"
+boot_splash/bg_color=Color( 1, 0.333333, 0.333333, 1 )
 config/icon="res://icon.png"
 
 [display]
