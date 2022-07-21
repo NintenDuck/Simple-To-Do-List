@@ -1,10 +1,19 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://resources/themes/simple_theme.tres" type="Theme" id=1]
 [ext_resource path="res://scenes/task.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/task_container.gd" type="Script" id=3]
 [ext_resource path="res://scripts/app.gd" type="Script" id=4]
 [ext_resource path="res://scripts/lowerButton.gd" type="Script" id=5]
+[ext_resource path="res://resources/fonts/Poppins-Bold.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=3]
+size = 128
+extra_spacing_top = -50
+extra_spacing_bottom = -50
+extra_spacing_char = -50
+extra_spacing_space = -50
+font_data = ExtResource( 6 )
 
 [sub_resource type="InputEventAction" id=1]
 action = "ui_accept"
@@ -26,8 +35,8 @@ script = ExtResource( 4 )
 anchor_top = 0.055
 anchor_right = 1.0
 anchor_bottom = 0.897
-margin_top = -0.205002
-margin_bottom = 0.292969
+margin_top = -0.599998
+margin_bottom = 0.76001
 color = Color( 1, 0.933333, 0.811765, 1 )
 
 [node name="DownBorderTexture" type="ColorRect" parent="App"]
@@ -47,16 +56,16 @@ anchor_left = 0.097
 anchor_top = 0.055
 anchor_right = 0.895
 anchor_bottom = 0.897
-margin_left = -15.867
-margin_top = 7.795
-margin_right = 17.155
-margin_bottom = -8.70703
+margin_left = -41.633
+margin_top = 0.400002
+margin_right = 81.345
+margin_bottom = -0.23999
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="TaskContainer" type="VBoxContainer" parent="App/TaskScroll"]
-margin_right = 360.0
-margin_bottom = 806.0
+margin_right = 980.0
+margin_bottom = 9590.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 40
@@ -67,38 +76,182 @@ __meta__ = {
 
 [node name="Task" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_right = 360.0
-margin_bottom = 101.0
+margin_right = 980.0
+margin_bottom = 281.0
 
 [node name="Task2" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 141.0
-margin_right = 360.0
-margin_bottom = 242.0
+margin_top = 321.0
+margin_right = 980.0
+margin_bottom = 602.0
 
 [node name="Task3" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 282.0
-margin_right = 360.0
-margin_bottom = 383.0
+margin_top = 642.0
+margin_right = 980.0
+margin_bottom = 923.0
 
 [node name="Task4" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 423.0
-margin_right = 360.0
-margin_bottom = 524.0
+margin_top = 963.0
+margin_right = 980.0
+margin_bottom = 1244.0
 
 [node name="Task5" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 564.0
-margin_right = 360.0
-margin_bottom = 665.0
+margin_top = 1284.0
+margin_right = 980.0
+margin_bottom = 1565.0
 
 [node name="Task6" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
-margin_top = 705.0
-margin_right = 360.0
-margin_bottom = 806.0
+margin_top = 1605.0
+margin_right = 980.0
+margin_bottom = 1886.0
+
+[node name="Task7" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 1926.0
+margin_right = 980.0
+margin_bottom = 2207.0
+
+[node name="Task8" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 2247.0
+margin_right = 980.0
+margin_bottom = 2528.0
+
+[node name="Task9" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 2568.0
+margin_right = 980.0
+margin_bottom = 2849.0
+
+[node name="Task10" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 2889.0
+margin_right = 980.0
+margin_bottom = 3170.0
+
+[node name="Task11" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 3210.0
+margin_right = 980.0
+margin_bottom = 3491.0
+
+[node name="Task12" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 3531.0
+margin_right = 980.0
+margin_bottom = 3812.0
+
+[node name="Task13" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 3852.0
+margin_right = 980.0
+margin_bottom = 4133.0
+
+[node name="Task14" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 4173.0
+margin_right = 980.0
+margin_bottom = 4454.0
+
+[node name="Task15" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 4494.0
+margin_right = 980.0
+margin_bottom = 4775.0
+
+[node name="Task16" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 4815.0
+margin_right = 980.0
+margin_bottom = 5096.0
+
+[node name="Task17" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 5136.0
+margin_right = 980.0
+margin_bottom = 5417.0
+
+[node name="Task18" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 5457.0
+margin_right = 980.0
+margin_bottom = 5738.0
+
+[node name="Task19" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 5778.0
+margin_right = 980.0
+margin_bottom = 6059.0
+
+[node name="Task20" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 6099.0
+margin_right = 980.0
+margin_bottom = 6380.0
+
+[node name="Task21" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 6420.0
+margin_right = 980.0
+margin_bottom = 6701.0
+
+[node name="Task22" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 6741.0
+margin_right = 980.0
+margin_bottom = 7022.0
+
+[node name="Task23" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 7062.0
+margin_right = 980.0
+margin_bottom = 7343.0
+
+[node name="Task24" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 7383.0
+margin_right = 980.0
+margin_bottom = 7664.0
+
+[node name="Task25" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 7704.0
+margin_right = 980.0
+margin_bottom = 7985.0
+
+[node name="Task26" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 8025.0
+margin_right = 980.0
+margin_bottom = 8306.0
+
+[node name="Task27" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 8346.0
+margin_right = 980.0
+margin_bottom = 8627.0
+
+[node name="Task28" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 8667.0
+margin_right = 980.0
+margin_bottom = 8948.0
+
+[node name="Task29" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 8988.0
+margin_right = 980.0
+margin_bottom = 9269.0
+
+[node name="Task30" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+margin_top = 9309.0
+margin_right = 980.0
+margin_bottom = 9590.0
 
 [node name="ButtonMarginContainer" type="MarginContainer" parent="App"]
 anchor_top = 0.897
@@ -107,20 +260,21 @@ anchor_bottom = 1.0
 margin_top = 0.292969
 
 [node name="ButtonContainer" type="CenterContainer" parent="App/ButtonMarginContainer"]
-margin_right = 411.0
-margin_bottom = 75.0
+margin_right = 1089.0
+margin_bottom = 197.0
 
 [node name="Button" type="Button" parent="App/ButtonMarginContainer/ButtonContainer"]
-margin_left = 105.0
-margin_top = 10.0
-margin_right = 305.0
-margin_bottom = 65.0
-rect_min_size = Vector2( 200, 55 )
+margin_left = 294.0
+margin_top = 38.0
+margin_right = 794.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 500, 120 )
 focus_mode = 0
 size_flags_vertical = 3
 custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_hover = Color( 0.454902, 0.454902, 0.454902, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
 shortcut_in_tooltip = false
 enabled_focus_mode = 0
 shortcut = SubResource( 2 )

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=23 format=2]
+[gd_resource type="Theme" load_steps=17 format=2]
 
 [ext_resource path="res://resources/fonts/Poppins-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://resources/images/UI/unchecked.png" type="Texture" id=2]
@@ -6,33 +6,30 @@
 [ext_resource path="res://resources/images/UI/buttonNormal.png" type="Texture" id=4]
 [ext_resource path="res://resources/images/UI/buttonPressed.png" type="Texture" id=5]
 [ext_resource path="res://resources/images/UI/buttonHover.png" type="Texture" id=6]
-[ext_resource path="res://resources/images/UI/scrollHover.png" type="Texture" id=7]
-[ext_resource path="res://resources/images/UI/scroll.png" type="Texture" id=8]
-[ext_resource path="res://resources/images/UI/scrollPressed.png" type="Texture" id=9]
 
 [sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 6 )
-region_rect = Rect2( 0, 0, 24, 24 )
-margin_left = 8.0
-margin_right = 8.0
-margin_top = 8.0
-margin_bottom = 8.0
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
 
 [sub_resource type="StyleBoxTexture" id=2]
 texture = ExtResource( 4 )
-region_rect = Rect2( 0, 0, 24, 24 )
-margin_left = 16.0
-margin_right = 16.0
-margin_top = 8.0
-margin_bottom = 8.0
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 20.0
+margin_right = 20.0
+margin_top = 12.0
+margin_bottom = 12.0
 
 [sub_resource type="StyleBoxTexture" id=4]
 texture = ExtResource( 5 )
-region_rect = Rect2( 0, 0, 24, 24 )
-margin_left = 8.0
-margin_right = 8.0
-margin_top = 8.0
-margin_bottom = 8.0
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
 
 [sub_resource type="StyleBoxEmpty" id=7]
 
@@ -46,27 +43,8 @@ margin_bottom = 8.0
 
 [sub_resource type="StyleBoxEmpty" id=10]
 
-[sub_resource type="StyleBoxTexture" id=12]
-texture = ExtResource( 7 )
-region_rect = Rect2( 0, 0, 8, 8 )
-margin_left = 3.0
-margin_right = 3.0
-margin_top = 3.0
-margin_bottom = 3.0
-
-[sub_resource type="StyleBoxTexture" id=13]
-texture = ExtResource( 9 )
-region_rect = Rect2( 0, 0, 8, 8 )
-margin_left = 3.0
-margin_right = 3.0
-margin_top = 3.0
-margin_bottom = 3.0
-
-[sub_resource type="StyleBoxTexture" id=14]
-texture = ExtResource( 8 )
-region_rect = Rect2( 0, 0, 1, 1 )
-
 [sub_resource type="DynamicFont" id=1]
+size = 48
 use_filter = true
 font_data = ExtResource( 1 )
 
@@ -97,13 +75,3 @@ CheckBox/styles/hover = SubResource( 6 )
 CheckBox/styles/hover_pressed = SubResource( 9 )
 CheckBox/styles/normal = SubResource( 3 )
 CheckBox/styles/pressed = SubResource( 10 )
-VScrollBar/icons/decrement = null
-VScrollBar/icons/decrement_highlight = null
-VScrollBar/icons/decrement_pressed = null
-VScrollBar/icons/increment = null
-VScrollBar/icons/increment_highlight = null
-VScrollBar/icons/increment_pressed = null
-VScrollBar/styles/grabber = SubResource( 12 )
-VScrollBar/styles/grabber_highlight = SubResource( 12 )
-VScrollBar/styles/grabber_pressed = SubResource( 13 )
-VScrollBar/styles/scroll = SubResource( 14 )
