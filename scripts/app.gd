@@ -14,6 +14,6 @@ func delete_tasks():
 
 func check_button_change(tasksSelected):
 	if tasksSelected >= 1:
-		print("Boton debe eliminar tasks")
+		btn_delete.disabled = false
 	else:
-		print("Boton debe añadir tasks")
+		btn_delete.disabled = true
