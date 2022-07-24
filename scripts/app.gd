@@ -1,15 +1,15 @@
 extends Control
 
-onready var taskContainer = $TaskScroll/TaskContainer
-onready var lowButton = $ButtonMarginContainer/ButtonContainer/Button
+onready var task_container = $TaskScroll/TaskContainer
+onready var btn_delete = $ButtonMarginContainer/btnDelete
 
 
 func _ready():
-	lowButton.connect("pressed", self, "buttonPressed")
-	taskContainer.connect("num_tasks_changed", self, "check_button_change")
+	btn_delete.connect("pressed", self, "delete_tasks")
+	task_container.connect("num_tasks_changed", self, "check_button_change")
 
-func buttonPressed():
-	taskContainer.delete_checked_tasks()
+func delete_tasks():
+	task_container.delete_checked_tasks()
 
 
 func check_button_change(tasksSelected):

@@ -65,7 +65,7 @@ size_flags_vertical = 3
 
 [node name="TaskContainer" type="VBoxContainer" parent="App/TaskScroll"]
 margin_right = 980.0
-margin_bottom = 7882.0
+margin_bottom = 2542.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 128
@@ -133,142 +133,22 @@ margin_top = 2403.0
 margin_right = 980.0
 margin_bottom = 2542.0
 
-[node name="Task11" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 2670.0
-margin_right = 980.0
-margin_bottom = 2809.0
-
-[node name="Task12" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 2937.0
-margin_right = 980.0
-margin_bottom = 3076.0
-
-[node name="Task13" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 3204.0
-margin_right = 980.0
-margin_bottom = 3343.0
-
-[node name="Task14" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 3471.0
-margin_right = 980.0
-margin_bottom = 3610.0
-
-[node name="Task15" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 3738.0
-margin_right = 980.0
-margin_bottom = 3877.0
-
-[node name="Task16" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 4005.0
-margin_right = 980.0
-margin_bottom = 4144.0
-
-[node name="Task17" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 4272.0
-margin_right = 980.0
-margin_bottom = 4411.0
-
-[node name="Task18" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 4539.0
-margin_right = 980.0
-margin_bottom = 4678.0
-
-[node name="Task19" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 4806.0
-margin_right = 980.0
-margin_bottom = 4945.0
-
-[node name="Task20" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 5073.0
-margin_right = 980.0
-margin_bottom = 5212.0
-
-[node name="Task21" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 5340.0
-margin_right = 980.0
-margin_bottom = 5479.0
-
-[node name="Task22" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 5607.0
-margin_right = 980.0
-margin_bottom = 5746.0
-
-[node name="Task23" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 5874.0
-margin_right = 980.0
-margin_bottom = 6013.0
-
-[node name="Task24" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 6141.0
-margin_right = 980.0
-margin_bottom = 6280.0
-
-[node name="Task25" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 6408.0
-margin_right = 980.0
-margin_bottom = 6547.0
-
-[node name="Task26" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 6675.0
-margin_right = 980.0
-margin_bottom = 6814.0
-
-[node name="Task27" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 6942.0
-margin_right = 980.0
-margin_bottom = 7081.0
-
-[node name="Task28" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 7209.0
-margin_right = 980.0
-margin_bottom = 7348.0
-
-[node name="Task29" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 7476.0
-margin_right = 980.0
-margin_bottom = 7615.0
-
-[node name="Task30" parent="App/TaskScroll/TaskContainer" instance=ExtResource( 2 )]
-anchor_right = 0.0
-margin_top = 7743.0
-margin_right = 980.0
-margin_bottom = 7882.0
-
-[node name="ButtonMarginContainer" type="MarginContainer" parent="App"]
+[node name="ButtonMarginContainer" type="Control" parent="App"]
 anchor_top = 0.897
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 0.292969
 
-[node name="ButtonContainer" type="CenterContainer" parent="App/ButtonMarginContainer"]
-margin_right = 1089.0
-margin_bottom = 197.0
-
-[node name="Button" type="Button" parent="App/ButtonMarginContainer/ButtonContainer"]
-margin_left = 294.0
-margin_top = 38.0
-margin_right = 794.0
-margin_bottom = 158.0
-rect_min_size = Vector2( 500, 120 )
+[node name="btnAdd" type="Button" parent="App/ButtonMarginContainer"]
+anchor_left = 0.0436924
+anchor_top = 0.00236516
+anchor_right = 0.793692
+anchor_bottom = 1.00237
+margin_left = 0.418999
+margin_top = 37.0
+margin_right = -0.331055
+margin_bottom = -30.467
+rect_min_size = Vector2( 30, 30 )
 focus_mode = 0
 size_flags_vertical = 3
 custom_colors/font_color = Color( 0.788235, 0.65098, 0.564706, 1 )
@@ -279,4 +159,31 @@ shortcut_in_tooltip = false
 enabled_focus_mode = 0
 shortcut = SubResource( 2 )
 text = "+"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="btnDelete" type="Button" parent="App/ButtonMarginContainer"]
+anchor_left = 0.837308
+anchor_top = 0.00200001
+anchor_right = 0.955308
+anchor_bottom = 1.0
+margin_left = 0.171936
+margin_top = 37.0721
+margin_right = 1.66992
+margin_bottom = -30.0
+rect_min_size = Vector2( 30, 30 )
+focus_mode = 0
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.788235, 0.65098, 0.564706, 1 )
+custom_colors/font_color_hover = Color( 0.788235, 0.65098, 0.564706, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+shortcut = SubResource( 2 )
+text = "-"
 script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
